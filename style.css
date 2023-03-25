@@ -1,0 +1,159 @@
+.back{
+    background-color: #40454d;
+}
+
+/* .heading{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2.5rem;
+} */
+
+body{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    color: gray;
+}
+header h2{
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+#new-task-input{
+    display: flex;
+}
+
+#new-task-form{
+    display: flex;
+}
+
+
+
+#new-task-submit{
+    display: flex;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input{
+    flex: 1% 1% 0;
+    background-color: #1e2125;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin: 1%;
+    width: 400;
+}
+
+
+#new-task-submit{
+    font-size: 1.23rem;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(237, 108, 130);
+    background-image: linear-gradient(to right, #8033e3, #f83d97);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+
+
+.task-list{
+    padding: 1% 1% 2% 5%;
+}
+
+
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #0f1113;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content .text{
+    color: whitesmoke;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: rgb(214, 58, 110);
+}
+
+#tasks .task .content{
+    flex: 1 1 0%;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+#tasks .task button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+#tasks .task .edit{
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #8033e3, #f83d97);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#tasks .task .edit:hover{
+    opacity: 0.8;
+}
+
+#tasks .task .delete{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(216, 52, 52);
+}
+
+#tasks .task .delete:hover{
+    opacity: 0.8;
+}
